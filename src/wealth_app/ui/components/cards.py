@@ -26,6 +26,12 @@ def panel(title: str, subtitle: str | None = None, accent: str = "gold") -> obje
 
 
 def page_header(title: str, subtitle: str | None = None, badge: str | None = None, action_html: str | None = None) -> None:
+    st.markdown(
+        """
+        <div class="prospera-watermark">ProsperaX</div>
+        """,
+        unsafe_allow_html=True,
+    )
     left, right = st.columns([4, 1])
     with left:
         st.markdown(f"## {title}")

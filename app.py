@@ -42,14 +42,14 @@ def main():
         with brand_col:
             st.markdown(
                 """
-                <div class="sidebar-brand-name">WealthOS</div>
+                <div class="sidebar-brand-name">ProsperaX</div>
                 """,
                 unsafe_allow_html=True,
             )
     else:
         st.sidebar.markdown(
             """
-            <div class="sidebar-brand-name">WealthOS</div>
+            <div class="sidebar-brand-name">ProsperaX</div>
             """,
             unsafe_allow_html=True,
         )
@@ -64,8 +64,7 @@ def main():
         "Goals & Progress",
         "Settings",
     ]
-    st.sidebar.caption("Navigation")
-    app_page = st.sidebar.radio("WealthOS", pages)
+    app_page = st.sidebar.radio("", pages)
 
     settings_repo = SettingsRepository()
     currency_key = f"currency_{app_page}"
@@ -81,6 +80,7 @@ def main():
         index=list(CURRENCY_META.keys()).index(default_page_currency),
         key=currency_key,
         help="Choose the ISO currency code and symbol for this page.",
+        label_visibility="collapsed",
     )
     compact_mode = st.sidebar.checkbox(
         "Compact numbers",

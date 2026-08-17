@@ -1,8 +1,8 @@
-# WealthOS
+# ProsperaX
 
 [![Python tests](https://github.com/RaveenGitHub/investInMyDashboard/actions/workflows/python-tests.yml/badge.svg)](https://github.com/RaveenGitHub/investInMyDashboard/actions/workflows/python-tests.yml)
 
-WealthOS is a local-first personal wealth dashboard built with Streamlit, pandas, and Plotly. It helps you monitor your portfolio, track goals, analyze quality and risk, review recurring investments, and keep a local SQLite-backed view of your financial data.
+ProsperaX is a local-first personal wealth dashboard built with Streamlit, pandas, and Plotly. It helps you monitor your portfolio, track goals, analyze quality and risk, review recurring investments, and keep a local SQLite-backed view of your financial data.
 
 ## Overview
 

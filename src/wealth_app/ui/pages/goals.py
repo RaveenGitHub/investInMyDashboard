@@ -15,7 +15,6 @@ def render_goals_dashboard(goal_upload=None):
         "Goals & Progress",
         "Monitor progress against each life goal and find where action is needed.",
         badge="Goals",
-        action_html=status_badge("WealthOS", "success"),
     )
 
     service = GoalsService()

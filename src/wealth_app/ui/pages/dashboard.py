@@ -20,7 +20,6 @@ def render_dashboard_page():
         "Dashboard",
         "Executive overview of portfolio health, recurring contributions, and goal progress.",
         badge="Live",
-        action_html=status_badge("WealthOS", "success"),
     )
 
     investments = load_investments()

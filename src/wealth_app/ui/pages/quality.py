@@ -16,7 +16,6 @@ def render_quality_dashboard(investment_upload=None):
         "Investment Quality & Decisions",
         "Assess return quality, risk, and simple buy/hold/sell signals.",
         badge="Quality",
-        action_html=status_badge("WealthOS", "success"),
     )
 
     repo = PortfolioRepository()
