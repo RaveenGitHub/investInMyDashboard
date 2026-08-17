@@ -1,0 +1,13 @@
+date,asset_class,instrument_name,amount_invested,current_value,returns_pct,risk_level
+2024-01-15,real estate,Sunset Apartments,120000,128500,7.08,Medium
+2024-01-20,stocks,Apple Inc,20000,24600,23.0,Medium
+2024-02-01,mutual funds,Vanguard Total Index,30000,31500,5.0,Low
+2024-02-15,crypto,Bitcoin,15000,12900,-14.0,High
+2024-03-10,deposits,Fixed Deposit,50000,54800,9.6,Low
+2024-03-15,stocks,Microsoft,18000,20160,12.0,Medium
+2024-04-05,mutual funds,Global Equity Fund,25000,26875,7.5,Medium
+2024-04-12,real estate,Coastal Villa,90000,87000,-3.33,High
+2024-05-01,crypto,Ethereum,12000,16680,39.0,High
+2024-05-14,deposits,Savings Account,35000,35750,2.14,Low
+2024-06-20,stocks,Nvidia,22000,28400,29.09,High
+2024-07-03,mutual funds,Dividend Growth Fund,26000,28120,8.15,Low

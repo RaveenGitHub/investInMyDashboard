@@ -1,0 +1,12 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldShield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF7CB"/>
+      <stop offset="24%" stop-color="#FFD700"/>
+      <stop offset="65%" stop-color="#D4A100"/>
+      <stop offset="100%" stop-color="#7A5A00"/>
+    </linearGradient>
+  </defs>
+  <path d="M128 16L199 40V107C199 165 165 211 128 235C91 211 57 165 57 107V40L128 16Z" fill="#101010" stroke="url(#goldShield)" stroke-width="8"/>
+  <path d="M86 172V72H117L128 95L139 72H170V172H146V104L132 130H124L110 104V172H86Z" fill="url(#goldShield)"/>
+</svg>
