@@ -1,6 +1,6 @@
-# WealthOS Onboarding Guide
+# ProsperaX Onboarding Guide
 
-This guide helps new users get started quickly with WealthOS and understand the basic flow of the app.
+This guide helps new users get started quickly with ProsperaX and understand the basic flow of the app.
 
 ## Who this is for
 
@@ -13,7 +13,7 @@ This app is designed for:
 
 ## What the app does
 
-WealthOS combines:
+ProsperaX combines:
 
 - Portfolio monitoring
 - Investment quality review
@@ -197,4 +197,4 @@ This project is intentionally local-first and easy to extend. You can build on i
 
 ## Summary
 
-WealthOS is designed to make personal financial monitoring simple, local, and visual. With minimal setup, you can begin tracking your investment health and progress toward your goals in a single desktop app.
+ProsperaX is designed to make personal financial monitoring simple, local, and visual. With minimal setup, you can begin tracking your investment health and progress toward your goals in a single desktop app.

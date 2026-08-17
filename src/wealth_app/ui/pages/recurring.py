@@ -14,7 +14,6 @@ def render_recurring_dashboard():
         "Daily & Monthly Investments",
         "Track recurring contributions, planned cash flow, and monthly investment pacing.",
         badge="Planning",
-        action_html=status_badge("WealthOS", "success"),
     )
 
     with st.form("recurring-investment-form", clear_on_submit=True):

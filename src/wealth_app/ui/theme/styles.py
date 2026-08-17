@@ -115,6 +115,28 @@ def apply_brand_theme() -> None:
         .main .block-container {{
             margin-left: 0.2rem;
             margin-right: 0.2rem;
+            position: relative;
+            overflow: hidden;
+        }}
+
+        .prospera-watermark {{
+            position: absolute;
+            top: 0.9rem;
+            left: 1.1rem;
+            font-size: clamp(2.6rem, 4vw, 5.2rem);
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.08em;
+            color: rgba(255, 215, 0, 0.08);
+            pointer-events: none;
+            user-select: none;
+            white-space: nowrap;
+            z-index: 0;
+        }}
+
+        .main .block-container > * {{
+            position: relative;
+            z-index: 1;
         }}
 
         .element-container {{

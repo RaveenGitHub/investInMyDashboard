@@ -14,7 +14,6 @@ def render_settings_page():
         "Settings",
         "Application defaults, saved preferences, and local data health.",
         badge="Config",
-        action_html=status_badge("WealthOS", "success"),
     )
 
     settings_repo = SettingsRepository()

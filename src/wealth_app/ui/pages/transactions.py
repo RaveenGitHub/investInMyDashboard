@@ -13,7 +13,6 @@ def render_transactions_dashboard():
         "Transactions",
         "Local transaction ledger and holdings rollup derived from imported asset data.",
         badge="Ledger",
-        action_html=status_badge("WealthOS", "success"),
     )
 
     ledger = get_transaction_ledger()

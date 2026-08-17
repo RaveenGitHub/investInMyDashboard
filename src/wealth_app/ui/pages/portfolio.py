@@ -14,7 +14,6 @@ def render_portfolio_page(investment_upload=None):
         "Portfolio & Investments",
         "Track portfolio value, allocation, and performance across your investments.",
         badge="Portfolio",
-        action_html=status_badge("WealthOS", "success"),
     )
 
     repo = PortfolioRepository()

@@ -13,7 +13,6 @@ def render_insights_dashboard():
         "Insights",
         "Priority recommendations, portfolio pressure points, and explicit rebalance actions.",
         badge="Insights",
-        action_html=status_badge("WealthOS", "success"),
     )
 
     investments = load_investments()
