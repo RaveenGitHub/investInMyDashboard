@@ -36,8 +36,23 @@ def main():
     apply_brand_theme()
 
     if BRAND_LOGO_PATH.exists():
-        st.sidebar.image(str(BRAND_LOGO_PATH), width=70)
-    st.sidebar.markdown("### WealthOS")
+        logo_col, brand_col = st.sidebar.columns([1, 3])
+        with logo_col:
+            st.image(str(BRAND_LOGO_PATH), width=42)
+        with brand_col:
+            st.markdown(
+                """
+                <div class="sidebar-brand-name">WealthOS</div>
+                """,
+                unsafe_allow_html=True,
+            )
+    else:
+        st.sidebar.markdown(
+            """
+            <div class="sidebar-brand-name">WealthOS</div>
+            """,
+            unsafe_allow_html=True,
+        )
 
     pages = [
         "Dashboard",

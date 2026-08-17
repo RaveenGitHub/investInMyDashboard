@@ -49,10 +49,76 @@ def apply_brand_theme() -> None:
             border-right: 1px solid var(--rj-border);
         }}
 
+        .stSidebar .block-container {{
+            padding-top: 1.2rem;
+            padding-bottom: 1.5rem;
+        }}
+
+        .stSidebar .stRadio > div[role="radiogroup"] {{
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            margin-top: 0.5rem;
+        }}
+
+        .stSidebar .stRadio label {{
+            min-height: 42px;
+            border-radius: 10px;
+            padding: 0.55rem 0.7rem;
+            border: 1px solid transparent;
+            background: rgba(255,255,255,0.01);
+            transition: all 180ms ease;
+            margin: 0;
+        }}
+
+        .stSidebar .stRadio label:hover {{
+            border-color: rgba(255, 215, 0, 0.18);
+            background: rgba(255, 215, 0, 0.04);
+        }}
+
+        .stSidebar .stRadio label[aria-checked="true"] {{
+            background: linear-gradient(180deg, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0.04));
+            border: 1px solid rgba(255, 215, 0, 0.28);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+        }}
+
+        .stSidebar .stRadio [data-baseweb="radio"] > div[role="radio"] {{
+            display: flex;
+            align-items: center;
+            min-height: 42px;
+        }}
+
+        .stSidebar .stCheckbox {{
+            min-height: 42px;
+            display: flex;
+            align-items: center;
+        }}
+
+        .stSidebar .stCheckbox > label {{
+            width: 100%;
+            min-height: 42px;
+            padding: 0.2rem 0.1rem;
+        }}
+
+        .stSidebar .stCheckbox label:hover {{
+            color: var(--rj-text-primary);
+        }}
+
         .block-container {{
             padding-top: 2rem;
             padding-bottom: 3rem;
             max-width: 1600px;
+            padding-left: 1.15rem;
+            padding-right: 1.15rem;
+        }}
+
+        .main .block-container {{
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+        }}
+
+        .element-container {{
+            margin-bottom: 0.55rem;
         }}
 
         h1, h2, h3, h4, p, label, .stMultiSelect, .stSelectbox, .stTextInput, .stCheckbox, .stNumberInput, .stDateInput {{
@@ -83,6 +149,10 @@ def apply_brand_theme() -> None:
             border-radius: var(--rj-radius-lg);
             box-shadow: var(--rj-shadow-soft);
             padding: 1.15rem 1rem;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }}
 
         .stMetric [data-testid="stMetricLabel"] {{
@@ -100,14 +170,28 @@ def apply_brand_theme() -> None:
         }}
 
         .stButton > button,
-        .stDownloadButton > button {{
+        .stDownloadButton > button,
+        .stFormSubmitButton > button,
+        button[kind="primary"],
+        button[kind="secondary"] {{
+            width: 100%;
+            min-height: 46px;
             border-radius: 12px;
-            border: 1px solid rgba(255, 215, 0, 0.5);
+            border: 1px solid rgba(255, 215, 0, 0.52);
             font-weight: 700;
             transition: all 180ms ease;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            padding: 0.72rem 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            box-sizing: border-box;
         }}
 
-        .stButton > button {{
+        .stButton > button,
+        .stFormSubmitButton > button {{
             background: linear-gradient(180deg, rgba(255, 215, 0, 0.12), rgba(212, 161, 0, 0.2));
             color: var(--rj-text-primary);
         }}
@@ -118,9 +202,78 @@ def apply_brand_theme() -> None:
         }}
 
         .stButton > button:hover,
-        .stDownloadButton > button:hover {{
+        .stDownloadButton > button:hover,
+        .stFormSubmitButton > button:hover {{
             transform: translateY(-1px);
             box-shadow: var(--rj-shadow-gold);
+        }}
+
+        .stTextInput > div > div,
+        .stNumberInput > div > div,
+        .stDateInput > div > div,
+        .stTextArea > div > div,
+        .stSelectbox > div[data-baseweb="select"] > div,
+        .stMultiSelect > div[data-baseweb="select"] > div,
+        .stFileUploader > div[data-testid="stFileUploaderDropzone"] {{
+            min-height: 46px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 215, 0, 0.22);
+            background: rgba(20, 20, 20, 0.96);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+            box-sizing: border-box;
+        }}
+
+        .stTextInput input,
+        .stNumberInput input,
+        .stDateInput input,
+        .stTextArea textarea,
+        .stSelectbox div[role="button"],
+        .stMultiSelect div[role="button"] {{
+            min-height: 46px;
+            border-radius: 12px;
+            background: rgba(20, 20, 20, 0.96);
+            color: var(--rj-text-primary);
+            border: none;
+            padding: 0.8rem 0.9rem;
+            box-sizing: border-box;
+        }}
+
+        .stSidebar .stTextInput > div > div,
+        .stSidebar .stNumberInput > div > div,
+        .stSidebar .stDateInput > div > div,
+        .stSidebar .stTextArea > div > div,
+        .stSidebar .stSelectbox > div[data-baseweb="select"] > div,
+        .stSidebar .stMultiSelect > div[data-baseweb="select"] > div,
+        .stSidebar .stFileUploader > div[data-testid="stFileUploaderDropzone"] {{
+            min-height: 44px;
+        }}
+
+        .stSidebar .stSelectbox label,
+        .stSidebar .stTextInput label,
+        .stSidebar .stNumberInput label,
+        .stSidebar .stDateInput label,
+        .stSidebar .stCheckbox label,
+        .stSidebar .stRadio label {{
+            font-weight: 600;
+            color: var(--rj-text-primary);
+        }}
+
+        .stSidebar .stButton > button,
+        .stSidebar .stDownloadButton > button,
+        .stSidebar .stFormSubmitButton > button {{
+            width: 100%;
+            min-height: 42px;
+            margin-top: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }}
+
+        .stSidebar .stButton > button > div,
+        .stSidebar .stDownloadButton > button > div,
+        .stSidebar .stFormSubmitButton > button > div {{
+            width: 100%;
         }}
 
         .stDataFrame, .stTable {{
@@ -249,8 +402,25 @@ def apply_brand_theme() -> None:
             align-items: baseline;
             gap: 0.75rem;
             margin: 1.5rem 0 0.8rem 0;
-            border-bottom: 1px solid var(--rj-border);
-            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.16);
+            padding-bottom: 0.55rem;
+        }}
+
+        .rj-section-header h3 {{
+            margin: 0;
+            letter-spacing: -0.02em;
+        }}
+
+        .stTabs [role="tablist"] {{
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }}
+
+        .stTabs [role="tablist"] button {{
+            border-radius: 10px 10px 0 0;
+            border: 1px solid transparent;
+            padding: 0.6rem 0.9rem;
+            font-weight: 700;
         }}
 
         .rj-section-header h3 {{
@@ -290,6 +460,18 @@ def apply_brand_theme() -> None:
             font-weight: 800;
             letter-spacing: -0.04em;
             color: var(--rj-text-primary);
+        }}
+
+        .sidebar-brand-name {{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 42px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            color: var(--rj-text-primary);
+            margin: 0.1rem 0 0.55rem 0;
         }}
 
         .rj-page-header {{
